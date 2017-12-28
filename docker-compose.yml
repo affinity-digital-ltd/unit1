@@ -3,7 +3,7 @@ version: '2.1'
 services:
   web:
     build: .
-    command: bash -c "bundle install && bundle exec puma -p 3001"
+    command: bash -c "bundle install && rails s -p 3001 -b 0.0.0.0"
     volumes:
       - .:/app
       - gem-cache:/gems
@@ -11,6 +11,7 @@ services:
       - '3001:3001'
     environment: &default_environment
       DATABASE_URL: 'postgres://postgres:@postgres:5432'
+      OS: 'windows'
     depends_on:
       - postgres
 
