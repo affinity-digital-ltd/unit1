@@ -1,0 +1,23 @@
+version: '2.1'
+
+services:
+  web:
+    build: .
+    command: bash -c "bundle install && bundle exec puma -p 3001"
+    volumes:
+      - .:/app
+      - gem-cache:/gems
+    ports:
+      - '3001:3001'
+    environment: &default_environment
+      DATABASE_URL: 'postgres://postgres:@postgres:5432'
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:9.5
+    ports:
+      - '5432'
+
+volumes:
+  gem-cache:
