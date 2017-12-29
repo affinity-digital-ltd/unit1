@@ -1,5 +1,5 @@
-<%= render 'shared/form_errors', record: @post%>
-<%= form_for @post do |f| %>
+<%= render 'shared/form_errors', record: @post %>
+<%= form_for [:admin, @post] do |f| %>
   <%= f.label :title %><br/>
   <%= f.text_field :title %><br/>
   <%= f.label :intro %><br/>

@@ -19,6 +19,8 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
+  gem 'factory_bot_rails', '~> 4.8'
+  gem 'faker', '~> 1.8', '>= 1.8.7'
   gem 'selenium-webdriver'
   gem 'rspec-rails', '~> 3.4', '>= 3.4.2'
 end

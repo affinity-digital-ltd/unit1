@@ -1,6 +1,6 @@
 FROM ruby:2.5-slim
 
-RUN apt-get update && apt-get install -y libpq-dev nodejs build-essential
+RUN apt-get update && apt-get install -y libpq-dev nodejs build-essential wget chromium chromedriver
 
 ENV app /app
 ENV BUNDLE_PATH /gems
