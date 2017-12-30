@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title>Unit1</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
 
   <body>
-    <nav>
-      <%= link_to 'Posts', posts_path %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light <%= nav_class %>">
+      <%= link_to 'Unit 1', root_path, class: "navbar-brand #{nav_brand_class}" %>
     </nav>
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

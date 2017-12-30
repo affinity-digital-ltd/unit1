@@ -1,2 +1,7 @@
-<h1>Edit Post</h1>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item" aria-current="page"><%= link_to 'Posts', admin_posts_path %></li>
+    <li class="breadcrumb-item active" aria-current="page">Edit Post</li>
+  </ol>
+</nav>
 <%= render 'form' %>
