@@ -26,4 +26,13 @@ RSpec.describe Post do
       expect(post2).to_not be_valid
     end
   end
+
+  describe "queueing email notifications" do
+    subject { create(:post) }
+
+    it "should queue a worker" do
+      expect { subject }
+        .to change(QueueNewPostEmailsJob.jobs, :size).by(1)
+    end
+  end
 end
