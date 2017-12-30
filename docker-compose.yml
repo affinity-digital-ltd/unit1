@@ -3,6 +3,7 @@ version: '2.1'
 services:
   web:
     build: .
+    image: unit1
     command: bash -c "bundle install && rails s -p 3001 -b 0.0.0.0"
     volumes:
       - .:/app
@@ -11,14 +12,33 @@ services:
       - '3001:3001'
     environment: &default_environment
       DATABASE_URL: 'postgres://postgres:@postgres:5432'
+      REDIS_URL: 'redis://redis:6379'
       OS: 'windows'
     depends_on:
       - postgres
+    
+  worker:
+    image: unit1
+    command: bundle exec sidekiq -c 5 -q critical -q default
+    volumes:
+      - .:/app
+      - gem-cache:/gems
+    environment:
+      <<: *default_environment
+    depends_on:
+      - redis
+      - postgres
+      - web
 
   postgres:
     image: postgres:9.5
     ports:
       - '5432'
+
+  redis:
+    image: redis:4.0
+    ports:
+      - '6379'
 
 volumes:
   gem-cache:
