@@ -5,6 +5,8 @@ Rails.application.routes.draw do
   end
 
   root 'posts#index'
-  resources :posts, only: [:show, :index]
+  resources :posts, only: [:show, :index] do
+    resources :comments, only: [:new, :create]
+  end
   resources :subscribers, only: [:new, :create]
 end

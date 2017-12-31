@@ -1,4 +1,3 @@
-<%= render 'shared/flash' %>
 <div class="row" style="margin-bottom: 2rem">
   <div class="col-12">
     <div class="card">
@@ -6,9 +5,7 @@
         If you would like to receive notifications about new posts, then please consider signing up.
       </div>
       <div class="card-body">
-        <%= form_for Subscriber.new do |f| %>
-          <%= render 'subscribers/form', f: f %>
-        <% end %>
+        <%= render 'subscribers/form' %>
       </div>
     </div>
   </div>
