@@ -3,7 +3,7 @@
     <h1 class="c-article__header"><%= @post.title %></h1>
     <hr class="c-article__rule" />
     <p class="c-article__intro" ><%= @post.intro %></p>
-    <p class="c-article__body"><%= @post.body %></p>
+    <p class="c-article__body"><%= raw render_markdown(@post.body) %></p>
 
     <div class="c-article__comments">
       <% @comments.each do |comment| %>
@@ -15,7 +15,7 @@
             <h6 class="card-subtitle mb-2 text-muted">
               <%= comment.name %>
             </h6>
-            <%= comment.body %>
+            <%= raw render_markdown(comment.body) %>
           </div>
         </div>
       <% end %>
