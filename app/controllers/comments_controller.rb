@@ -1,4 +1,6 @@
 class CommentsController < ApplicationController
+  include Secured
+  
   before_action :find_post, only: [:new, :create]
 
   def new
