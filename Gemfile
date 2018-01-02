@@ -38,6 +38,10 @@ gem 'dalli', '~> 2.7', '>= 2.7.6'
 # Markdown
 gem 'redcarpet', '~> 3.4'
 
+# GraphQL
+gem 'graphql', '~> 1.7', '>= 1.7.7'
+gem 'graphql-query-resolver', '~> 0.2.0'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
@@ -52,3 +56,4 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
+gem 'graphiql-rails', group: :development
