@@ -9,6 +9,8 @@ The intensive course is designed to be less hands on than the self-study course.
 
 You should have built enough of a foundation during the self-study course to be familiar enough with Ruby/Rails, HTML and CSS.
 
+However, this project contains a branch for most steps of the development process.  So if you find yourself getting really stuck, you can refer to that particular branch for support.  Please bear in mind, that this should only be used as a last resort.
+
 For the duration of the course you will now be following the process as outlined below:
 
 ## Writing User Stories and Defining Database Schemas
