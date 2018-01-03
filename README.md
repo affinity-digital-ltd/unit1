@@ -30,5 +30,5 @@ release/[version number] - For pushing new code into production
 ## Using a Scrum Board
 
 ## Content and Activities
-- [Unit 1](https://github.com/affinity-digital-ltd/unit1/wiki/Unit-1)
+- [Unit 1](https://github.com/affinity-digital-ltd/unit1/wiki)
 
