@@ -20,11 +20,11 @@ Before starting any coding you should write [user stories](https://www.mountaing
 If you aren’t already doing so, from now on you will be following [git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) in respect to the git branches your projects has, and how you introduce new features into your codebase.
 
 In a nutshell, you will have the following branches:
-- master - This is where your production code lives
-- develop - This should also be stable, but contain the most up to date code which may not be in production yet
-- feature/[github issue number] - New code will be developed here and will cover features defined in your user story
-- hotfix/[github issue number] - If you need to fix a bug that is currently in production
-- release/[version number] - For pushing new code into production
+- `master` - This is where your production code lives
+- `develop` - This should also be stable, but contain the most up to date code which may not be in production yet
+- `feature/[github issue number]` - New code will be developed here and will cover features defined in your user story
+- `hotfix/[github issue number]` - If you need to fix a bug that is currently in production
+- `release/[version number]` - For pushing new code into production
 
 ## Creating Pull Requests
 You should never work on or push to the master branch directly.  Any new code should be branched off of develop (see above), and before you merge your work back into `develop` you must first create a pull request and submit it for review. 
