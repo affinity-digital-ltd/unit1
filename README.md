@@ -1,5 +1,7 @@
 # {Pro}Coders Unit 1
 
+This Unit will take roughly 240 hours to complete.
+
 During Unit 1 you will be laying a foundation through the use of the books you received, the odin project and then building on this through more advanced approaches outlined in these pages.  You will also be picking up industry practices, such as: scrum, agile, git flow, pull requests, stand ups and retrospectives.
 
 ## Approach to Learning
