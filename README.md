@@ -34,7 +34,7 @@ To submit a PR for review, please paste a link of the PR into the slack channel 
 Once you have received enough feedback and had your PR reviewed you can merge it into your develop branch.
 
 ## Using a Scrum Board
-In order to manage your work, you can set up a [scrum board](https://manifesto.co.uk/agile-concepts-scrum-task-board/) within the [projects tab](https://help.github.com/articles/creating-a-project-board/) of your github repository.  In this way, you can track the progress of your work and see what remaining tasks you have remaining. 
+In order to manage your work, you can set up a [scrum board](https://manifesto.co.uk/agile-concepts-scrum-task-board/) within the [projects tab](https://help.github.com/articles/creating-a-project-board/) of your github repository.  In this way, you can track the progress of your work and see what tasks you have remaining. 
 
 Once you have created a project, add the following columns: Backlog, In Progress, Awaiting Review, Done
 
