@@ -1,20 +1,16 @@
-# {Pro}Coders Intensive Course
+# {Pro}Coders Unit 1
 
-### Congratulations on reaching the intensive course!
-
-During the intensive course, you will be building on the foundation you laid over the past four weeks.  You will also be picking up industry practices, such as: scrum, agile, git flow, pull requests, stand ups and retrospectives.
+During Unit 1 you will be laying a foundation through the use of the books you received, the odin project and then building on this through more advanced approaches outlined in these pages.  You will also be picking up industry practices, such as: scrum, agile, git flow, pull requests, stand ups and retrospectives.
 
 ## Approach to Learning
-The intensive course is designed to be less hands on than the self-study course.  It will involve more research, trial and error, problem solving and debugging.  Each week will lay out what is required from you and provide an order of how things should be completed.  It will not tell you what code you should write, but will provide links to resources which should help you to find the code you need to implement.
+The course is designed to be less hands-on than traditional classroom based courses.  It will involve research, trial and error, problem solving and debugging.  Each part will lay out what is required from you and provide an order of how things should be completed.  It will not tell you what code you should write, but will provide links to resources which should help you to find the code you need to implement.
 
-You should have built enough of a foundation during the self-study course to be familiar enough with Ruby/Rails, HTML and CSS.
-
-However, this project contains a branch for most steps of the development process.  So if you find yourself getting really stuck, you can refer to that particular branch for support.  Please bear in mind, that this should only be used as a last resort.
+Each step should introduce you to new concepts and give you enough of a foundation to be able to complete the more advanced exercises. However, this project contains a branch for most steps of the development process.  So if you find yourself getting really stuck, you can refer to that particular branch for support.  Please bear in mind, that this should only be used as a last resort.
 
 For the duration of the course you will now be following the process as outlined below:
 
 ## Writing User Stories and Defining Database Schemas
-Before starting any coding you should write [user stories](https://www.mountaingoatsoftware.com/agile/user-stories) for each aspect of the feature you would like to implement.  This will make it easier to break your code down into bite size pieces of code that you can implement independently of any other feature. It also helps in the testing process, as your user story literally defines what you will be expecting as a result within your tests.
+Before starting any coding you should write [user stories](https://www.mountaingoatsoftware.com/agile/user-stories) for each aspect of the feature you would like to implement.  This will make it easier to break your feature down into bite-size pieces of code that you can implement independently of any other feature. It also helps in the testing process, as your user story literally defines what you will be expecting as a result within your tests.
 
 ## Using Git Flow
 If you aren’t already doing so, from now on you will be following [git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) in respect to the git branches your projects has, and how you introduce new features into your codebase.
