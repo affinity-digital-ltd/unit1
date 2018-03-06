@@ -41,6 +41,7 @@ gem 'redcarpet', '~> 3.4'
 # GraphQL
 gem 'graphql', '~> 1.7', '>= 1.7.7'
 gem 'graphql-query-resolver', '~> 0.2.0'
+gem 'rack-cors', '~> 1.0', '>= 1.0.2'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
