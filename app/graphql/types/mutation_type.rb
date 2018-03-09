@@ -3,7 +3,7 @@ Types::MutationType = GraphQL::ObjectType.define do
 
   field :addComment, Types::CommentType do
     description "Adds a comment"
-    argument :postId, !types.Int
+    argument :postId, !types.ID
     argument :name, !types.String
     argument :body, !types.String
 
