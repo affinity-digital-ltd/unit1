@@ -51,20 +51,6 @@ RSpec.describe "Posts", type: :feature do
     end
   end
 
-  describe "viewing posts" do
-    let!(:post) { create(:post) }
-
-    it "should show all content" do
-      visit posts_path
-
-      click_on(post.title)
-
-      expect(page).to have_content post.title
-      expect(page).to have_content post.body
-      expect(page).to have_content post.intro
-    end
-  end
-
   describe "deleting posts" do
     let!(:post) { create(:post) }
 
