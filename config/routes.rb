@@ -4,8 +4,6 @@ Rails.application.routes.draw do
     resources :posts, except: :show
   end
 
-  constraints host: ENV.fetch('HOST_NAME') do
-    post "/graphql", to: "graphql#execute"
-    resources :subscribers, only: [:create]
-  end
+  post "/graphql", to: "graphql#execute"
+  resources :subscribers, only: [:create]
 end

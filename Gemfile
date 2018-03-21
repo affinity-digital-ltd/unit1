@@ -38,6 +38,9 @@ gem 'dalli', '~> 2.7', '>= 2.7.6'
 # Markdown
 gem 'redcarpet', '~> 3.4'
 
+# API
+gem 'rack-throttle', '~> 0.5.0'
+
 # GraphQL
 gem 'graphql', '~> 1.7', '>= 1.7.7'
 gem 'graphql-query-resolver', '~> 0.2.0'
