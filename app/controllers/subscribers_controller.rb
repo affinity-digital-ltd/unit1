@@ -3,9 +3,13 @@ class SubscribersController < ApplicationController
     @subscriber = Subscriber.new(subscriber_params)
 
     if @subscriber.save
-      render status: 200
+      respond_to do |format| 
+        format.json { render json: @subscriber }
+      end
     else
-      render status: 500
+      respond_to do |format| 
+        format.json { render json: @subscriber.errors }
+      end
     end
   end
 
