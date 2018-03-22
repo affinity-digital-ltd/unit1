@@ -25,7 +25,7 @@ In a nutshell, you will have the following branches:
 - `release/[version number]` - For pushing new code into production
 
 ## Creating Pull Requests
-You should never work on or push to the master branch directly.  Any new code should be branched off of develop (see above), and before you merge your work back into `develop` you must first create a pull request and submit it for review. 
+**You should never work on or push to the master branch directly**.  Any new code should be branched off of develop (see above), and before you merge your work back into `develop` you must first create a [pull request](https://yangsu.github.io/pull-request-tutorial/) and submit it for review. 
 
 To submit a PR for review, please paste a link of the PR into the slack channel `#pr-review` at which point your peers and coaches can leave you feedback.
 
