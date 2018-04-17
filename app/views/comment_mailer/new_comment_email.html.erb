@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
+  </head>
+  <body>
+    <h1><%= @comment.name %> has posted a new comment</h1>
+    <p>
+      <%= @comment.name %> has posted a new comment on '<%= link_to @comment.post.title, post_url(@comment.post) %>' 
+    </p>
+    <p>
+      <%= @comment.body %>
+    </p>
+  </body>
+</html>

@@ -18,6 +18,14 @@
   &__body {
     margin-bottom: 4rem;
   }
+
+  &__comment {
+    margin-bottom: 1rem;
+  }
+
+  &__comments {
+    margin-bottom: 2rem;
+  }
   
   @include media-breakpoint-up(md) {
     &__header {
