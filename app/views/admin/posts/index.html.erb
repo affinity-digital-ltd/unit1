@@ -1,12 +1,34 @@
-<h1>Posts</h1>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item active" aria-current="page">Posts</li>
+  </ol>
+</nav>
 <% if @posts.exists? %>
-  <% @posts.each do |post| %>
-    <p>
-      <%= link_to post.title, post_path(post) %> - 
-      [<%= link_to 'edit', edit_admin_post_path(post) %>], 
-      [<%= link_to 'delete', admin_post_path(post), method: :delete, data: {confirm: 'Are you sure?'} %>]<br/>
-    </p>
-  <% end %>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th width="80%">Title</th>
+        <th class="u-align-right">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% @posts.each do |post| %>
+        <tr>
+          <td>
+            <%= link_to post.title, post_path(post) %>
+          </td>
+          <td class="u-align-right">
+            <%= link_to edit_admin_post_path(post), data: { behavior: 'edit'} do %>
+              <i class="fa fa-edit" style="color: orange"></i>
+            <% end %>
+            <%= link_to admin_post_path(post), method: :delete, data: {confirm: 'Are you sure?', behavior: 'delete'} do %>
+              <i class="fa fa-trash" style="color: red"></i>
+            <% end %>
+          </td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
 <% else %>
   <p>There are currently no posts to display. Why not try <%= link_to 'adding', new_admin_post_path %> one?</p>
 <% end %>

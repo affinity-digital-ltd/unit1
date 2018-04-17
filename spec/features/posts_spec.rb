@@ -36,7 +36,7 @@ RSpec.describe "Posts", type: :feature do
     it "should have changed the title" do
       visit admin_posts_path
 
-      click_on("edit")
+      find("[data-behavior='edit']").click
 
       fill_in "Title", with: "Test"
 
@@ -68,7 +68,7 @@ RSpec.describe "Posts", type: :feature do
 
       expect(page).to have_content post.title
       
-      click_on("delete")
+      find("[data-behavior='delete']").click
       page.driver.browser.switch_to.alert.accept
 
       expect(page).to_not have_content post.title

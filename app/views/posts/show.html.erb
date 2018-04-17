@@ -1,3 +1,8 @@
-<h1><%= @post.title %></h1>
-<p><%= @post.intro %></p>
-<p><%= @post.body %></p>
+<div class="row">
+  <div class="col-lg-10 offset-lg-1">
+    <h1 class="c-article__header"><%= @post.title %></h1>
+    <hr class="c-article__rule" />
+    <p class="c-article__intro" ><%= @post.intro %></p>
+    <p class="c-article__body"><%= @post.body %></p>
+  </div>
+</div>
