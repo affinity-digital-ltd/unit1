@@ -1,18 +1,22 @@
 .c-article {
-   &__header {
-     margin-top: 1rem;
-     text-align: center;
-     font-size: 2rem;
-   }
+  &__header {
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 2rem;
+  }
 
-   &__rule {
-     margin-top: 1rem;
-     width: 50%;
-     margin-bottom: 1rem;
-   }
+  &__rule {
+    margin-top: 1rem;
+    width: 50%;
+    margin-bottom: 1rem;
+  }
 
   &__intro {
     font-weight: 500;
+  }
+
+  &__body {
+    margin-bottom: 4rem;
   }
   
   @include media-breakpoint-up(md) {
