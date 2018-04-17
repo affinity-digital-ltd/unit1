@@ -33,7 +33,7 @@ class GraphqlController < ApplicationController
   def authorised?
     token = request.authorization[7, request.authorization.length]
     decoded_token = JWT.decode(token, OpenSSL::PKey::RSA.new(ENV.fetch('AUTH0_CERTIFICATE')).public_key, true, { algorithm: 'RS256' })
-    decoded_token.is_a? Array
+    decoded_token.first.fetch("exp") >= Time.now.to_i
   rescue
     false
   end
