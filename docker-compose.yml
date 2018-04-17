@@ -1,8 +1,11 @@
-version: '2.1'
+version: '3.5'
 
 services:
   web:
-    build: .
+    build:
+      context: .
+      shm_size: '512mb'
+    privileged: true
     image: unit1
     command: bash -c "bundle install && rails s -p 3001 -b 0.0.0.0"
     volumes:
