@@ -145,6 +145,7 @@ GEM
     public_suffix (3.0.1)
     puma (3.11.0)
     rack (2.0.3)
+    rack-cors (1.0.2)
     rack-protection (2.0.0)
       rack
     rack-test (0.8.2)
@@ -272,6 +273,7 @@ DEPENDENCIES
   omniauth-auth0 (~> 2.0.0)
   pg (~> 0.21.0)
   puma (~> 3.7)
+  rack-cors (~> 1.0, >= 1.0.2)
   rails (~> 5.1.4)
   redcarpet (~> 3.4)
   rspec-rails (~> 3.4, >= 3.4.2)
