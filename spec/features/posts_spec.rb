@@ -1,9 +1,12 @@
 require 'rails_helper'
 
 RSpec.describe "Posts", type: :feature do
+  include BasicAuthHelper
+  
   context "adding posts" do
     describe "adding a valid post" do
-      it "should be added" do
+      it "should be added" do        
+        log_in
         visit new_admin_post_path
         
         fill_in 'Title', with: 'title'
@@ -18,6 +21,7 @@ RSpec.describe "Posts", type: :feature do
 
     describe "adding an invalid post" do
       it "should give feedback on the error" do
+        log_in
         visit new_admin_post_path
 
         fill_in 'Title', with: 'title'
@@ -34,6 +38,7 @@ RSpec.describe "Posts", type: :feature do
     let!(:post) { create(:post) }
 
     it "should have changed the title" do
+      log_in
       visit admin_posts_path
 
       find("[data-behavior='edit']").click
@@ -64,7 +69,9 @@ RSpec.describe "Posts", type: :feature do
     let!(:post) { create(:post) }
 
     it "should be removed", js: true do
-      visit admin_posts_path
+      log_in
+
+      visit admin_root_path
 
       expect(page).to have_content post.title
       
