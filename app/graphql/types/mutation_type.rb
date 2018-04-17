@@ -7,11 +7,15 @@ Types::MutationType = GraphQL::ObjectType.define do
     argument :name, !types.String
     argument :body, !types.String
 
-    resolve ->(o,args,c) {
-      post = Post.find(args[:postId])
-      comment = post.comments.build(name: args[:name], body: args[:body])
-      comment.save!
-      comment
+    resolve ->(obj, args, ctx) {
+      if ctx.fetch(:authorised)
+        post = Post.find(args[:postId])
+        comment = post.comments.build(name: args[:name], body: args[:body])
+        comment.save!
+        comment
+      else
+         GraphQL::ExecutionError.new("Please login")
+      end
     }
   end
 end

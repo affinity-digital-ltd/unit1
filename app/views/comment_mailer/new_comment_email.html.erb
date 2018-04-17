@@ -6,7 +6,7 @@
   <body>
     <h1><%= @comment.name %> has posted a new comment</h1>
     <p>
-      <%= @comment.name %> has posted a new comment on '<%= link_to @comment.post.title, post_url(@comment.post) %>' 
+      <%= @comment.name %> has posted a new comment on '<%= link_to @comment.post.title, "http://my_domain/posts/#{@comment.post.id}" %>' 
     </p>
     <p>
       <%= @comment.body %>
