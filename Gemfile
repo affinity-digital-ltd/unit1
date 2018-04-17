@@ -35,6 +35,9 @@ gem 'omniauth-auth0', '~> 2.0.0'
 # Cache
 gem 'dalli', '~> 2.7', '>= 2.7.6'
 
+# Markdown
+gem 'redcarpet', '~> 3.4'
+
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
