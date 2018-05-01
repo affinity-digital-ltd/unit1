@@ -11,9 +11,6 @@ Each step should introduce you to new concepts and give you enough of a foundati
 
 For the duration of the course you will now be following the process as outlined below:
 
-## Writing User Stories and Defining Database Schemas
-Before starting any coding you should write [user stories](https://www.mountaingoatsoftware.com/agile/user-stories) for each aspect of the feature you would like to implement.  This will make it easier to break your feature down into bite-size pieces of code that you can implement independently of any other feature. It also helps in the testing process, as your user story literally defines what you will be expecting as a result within your tests.
-
 ## Using Git Flow
 If you aren’t already doing so, from now on you will be following [git flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) in respect to the git branches your projects has, and how you introduce new features into your codebase.
 
@@ -30,6 +27,11 @@ In a nutshell, you will have the following branches:
 To submit a PR for review, please paste a link of the PR into the slack channel `#pr-review` at which point your peers and coaches can leave you feedback.
 
 Once you have received enough feedback and had your PR reviewed you can merge it into your develop branch.
+
+## Writing User Stories and Defining Database Schemas
+Before starting any coding you should write [user stories](https://www.mountaingoatsoftware.com/agile/user-stories) for each aspect of the feature you would like to implement.  This will make it easier to break your feature down into bite-size pieces of code that you can implement independently of any other feature. It also helps in the testing process, as your user story literally defines what you will be expecting as a result within your tests.
+
+**You will start to write User Stories from Step 2 of Unit 1, Part 1.**
 
 ## Using a Scrum Board
 In order to manage your work, you can set up a [scrum board](https://manifesto.co.uk/agile-concepts-scrum-task-board/) within the [projects tab](https://help.github.com/articles/creating-a-project-board/) of your github repository.  In this way, you can track the progress of your work and see what tasks you have remaining. 
