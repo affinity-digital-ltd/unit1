@@ -38,6 +38,17 @@ In order to manage your work, you can set up a [scrum board](https://manifesto.c
 
 Once you have created a project, add the following columns: Backlog, In Progress, Awaiting Review, Done
 
+## Pair Programming
+Due to the nature of the course being flexible, in terms of starting dates and people's availability, we have set up a pair-programming calendar for people to share their availablity and facilitate times for pair-programming.  We also have a recording of an example pair programming session to help guide you on how to pair program efficiently. This is available on vimeo: https://vimeo.com/album/5160912 the password is: `procoder-learners`
+
+## Newsletters
+Here are some really useful curated newsletters to help steer you towards interesting and relevant articles and tutorials:
+- https://webopsweekly.com/
+- https://rubyweekly.com/
+- https://react.statuscode.com/
+- https://nodeweekly.com/
+- https://frontendfoc.us/
+
 ## Content and Activities
 - [Unit 1](https://github.com/affinity-digital-ltd/unit1/wiki)
 
